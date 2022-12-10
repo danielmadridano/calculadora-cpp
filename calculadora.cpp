@@ -15,6 +15,33 @@ int main(){
     printf("4. Division\n\n");
     printf("Selecciona una opcion: "); scanf("%d", &opc);
 
+    switch(opc){
+        case 1:
+            printf("Introduce un numero: "); scanf("%f", &n1);
+            printf("\nIntroduce otro numero: "); scanf("%f", &n2);
+            suma=n1+n2;
+            printf("\nLa suma de los numeros es %f", suma);
+            break;
+        case 2:
+            printf("Introduce un numero: "); scanf("%f", &n1);
+            printf("\nIntroduce otro numero: "); scanf("%f", &n2);
+            resta=n1-n2;
+            printf("\nLa resta de los numeros es %f", resta);
+            break;
+        case 3:
+            printf("Introduce un numero: "); scanf("%f", &n1);
+            printf("\nIntroduce otro numero: "); scanf("%f", &n2);
+            multiplicacion=n1*n2;
+            printf("\nLa multiplicacion de los numeros es %f", multiplicacion);
+            break;
+        case 4:
+            printf("Introduce un numero: "); scanf("%f", &n1);
+            printf("\nIntroduce otro numero: "); scanf("%f", &n2);
+            division=n1/n2;
+            printf("\nLa division de los numeros es %f", division);
+            break;
+    }
+
     getch();
     return 0;
 }
